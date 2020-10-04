@@ -78,7 +78,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         }
 
         public void bind(final Movie movie) {
-            tvTitle.setText(movie.getTitle());
+            if (movie.getRating()> 7){
+                tvTitle.setText(movie.getTitle()+" \uD83C\uDF1F");
+            }
+            else{
+                tvTitle.setText(movie.getTitle());
+            }
             tvOverview.setText(movie.getOverview());
             String imageUrl;
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
