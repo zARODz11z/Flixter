@@ -14,7 +14,8 @@
 - [x] Trailers for popular movies are played automatically when the movie is selected (1 point).
   - [x] When clicking on a popular movie (movies with at least 7 stars) the video should be played immediately.
   - [x] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
-- [x] Added a star icon to popular movies to indicate that the movie is popular from the main activity (1 point).
+- [x] Add a play icon overlay to popular movies to indicate that the movie can be played (1 point).
+- [x] Added a star icon to popular movies to indicate that the movie is popular from the main activity.
 - [ ] Apply the popular ButterKnife annotation library to reduce view boilerplate. (1 point)
 - [x] Add a rounded corners for the images using the Glide transformations. (1 point)
 
@@ -27,6 +28,8 @@
 ### Notes
 
 Describe any challenges encountered while building the app.
+-My emulator at one point would just not run, it was frustrating but I figurered it out.
+
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing

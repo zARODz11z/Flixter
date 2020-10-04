@@ -67,6 +67,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         TextView tvTitle;
         TextView tvOverview;
         ImageView ivPoster;
+        ImageView img_play;
 
 
         public ViewHolder(@androidx.annotation.NonNull View itemView) {
@@ -75,14 +76,17 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             tvOverview = itemView.findViewById(R.id.tvOverview);
             ivPoster = itemView.findViewById(R.id.ivPoster);
             container = itemView.findViewById(R.id.container);
+            img_play = itemView.findViewById(R.id.img_play);
         }
 
         public void bind(final Movie movie) {
             if (movie.getRating()> 7){
                 tvTitle.setText(movie.getTitle()+" \uD83C\uDF1F");
+                img_play.bringToFront();
             }
             else{
                 tvTitle.setText(movie.getTitle());
+                img_play.setAlpha((float)0);
             }
             tvOverview.setText(movie.getOverview());
             String imageUrl;

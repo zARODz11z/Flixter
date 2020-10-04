@@ -19,6 +19,7 @@
 
     <TextView
         android:id="@+id/tvTitle"
+        android:transitionName="title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -29,6 +30,7 @@
 
     <TextView
         android:id="@+id/tvOverview"
+        android:transitionName="overview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
@@ -38,4 +40,16 @@
         android:layout_marginEnd="2dp"
         android:layout_toEndOf="@+id/ivPoster"
         tools:text="Battle-hardened O’Hara leads a lively mercenary team of soldiers on a daring mission: rescue hostages from their captors in remote Africa. But as the mission goes awry and the team is stranded, O’Hara’s squad must face a bloody, brutal encounter with a gang of rebels." />
+
+    <ImageView
+        android:id="@+id/img_play"
+        android:layout_width="103dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="37dp"
+        android:alpha=".75"
+        app:srcCompat="@android:drawable/ic_media_play" />
 </RelativeLayout>
