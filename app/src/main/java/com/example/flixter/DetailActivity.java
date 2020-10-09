@@ -22,9 +22,11 @@ import org.parceler.Parcels;
 
 import okhttp3.Headers;
 
+import static com.example.flixter.BuildConfig.YOUTUBEPLAYER_API_KEY;
+
 public class DetailActivity extends YouTubeBaseActivity {
-    private static final String YOUTUBE_API_KEY = "AIzaSyDBfFmCXmboINcQ7dwl4yRdxztTA49VQXM";
-    public static final String VIDEOS_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
+    private static final String YOUTUBE_API_KEY = YOUTUBEPLAYER_API_KEY;
+    private static final String VIDEOS_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
     TextView tvTitle;
     TextView tvOverview;
     RatingBar ratingBar;
